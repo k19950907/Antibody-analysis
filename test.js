@@ -1,4 +1,8 @@
+const { config } = require("dotenv")
 const db = require("./models")
+require("dotenv").config()
+
+console.log(process.env.DB_URL)
 
 async function connection_test() {
   try{
